@@ -22,36 +22,69 @@
 
 // export default App;
 
+// import React, {Component} from "react";
+// import Home from "./components/Home";
+
+// class App extends Component{
+
+//   constructor(){
+//     super();
+//     this.state = {
+//       message : "welcome",age : "30"
+//     }
+//   }
+
+//   changeHandler = () =>{
+//     this.setState({
+//       message : "thank you",
+//       age : 35
+//     })
+    
+//   }
+
+//   render(){
+//     return(
+//       <div>
+//         <h1>{this.state.message}</h1>
+//         <h2>{this.state.age}</h2>
+//         <button onClick={this.changeHandler}>Click</button>
+//         <Home msg={this.state}/>
+//       </div>
+//     )
+//   }
+
+// }
+ //export default App
+
+
+//task2
+// import React, { Component } from 'react';
+// import Home from "./task2/Home";
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Home/>
+//       </div>
+//     );
+//   }
+// }
+// export default App;
+
 import React, {Component} from "react";
-import Home from "./components/Home";
+import Home from "./task3/Home";
 
 class App extends Component{
-
-  constructor(){
-    super();
-    this.state = {
-      message : "welcome",age : "30"
-    }
-  }
-
-  changeHandler = () =>{
-    this.setState({
-      message : "thank you",
-      age : 35
-    })
-    
-  }
-
   render(){
     return(
-      <div>
-        <h1>{this.state.message}</h1>
-        <h2>{this.state.age}</h2>
-        <button onClick={this.changeHandler}>Click</button>
-        <Home msg={this.state}/>
-      </div>
-    )
-  }
 
+        <div>
+          <Home/>
+        </div>
+
+    );
+  }
 }
-export default App
+
+export default App;
