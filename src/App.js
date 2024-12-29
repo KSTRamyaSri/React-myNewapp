@@ -72,19 +72,88 @@
 // }
 // export default App;
 
-import React, {Component} from "react";
-import Home from "./task3/Home";
+// import React, {Component} from "react";
+// import Home from "./task3/Home";
 
-class App extends Component{
-  render(){
-    return(
+// class App extends Component{
+//   render(){
+//     return(
 
-        <div>
-          <Home/>
-        </div>
+//         <div>
+//           <Home/>
+//         </div>
 
-    );
-  }
+//     );
+//   }
+// }
+
+// export default App;
+
+
+// import React, {Component} from "react";
+// import IncrementDecrement from "./components/IncrementDecrement";
+
+// class App extends Component{
+//   render(){
+//     return(
+//       <>
+//         <IncrementDecrement/>
+//       </>
+//     );
+//   }
+// }
+
+// export default App;
+
+// import React, {Component} from "react";
+// // import FormData from "./components/FormData";
+// // import Counter from "./components/Counter";
+// import FunctionComponent from "./components/FunctionComponent";
+
+// class App extends Component{
+//   render(){
+//     return(
+//       <>
+//         {/* <FormData/> */}
+//         {/* <Counter/> */}
+//         <FunctionComponent/>
+//       </>
+//     );
+//   }
+// }
+
+// export default App;
+
+
+// import React, { Component } from 'react';
+// import {FormHandling} from './components/FormHandling';
+
+// export class App extends Component {
+//   render() {
+//     return (
+//       <>
+//       {/* <FormData/> */}
+//       <FormHandling/>
+//       </>
+
+//     )
+//   }
+// }
+
+// export default App
+
+import React from "react";
+import Localstorage from "./components/Localstorage";
+import LocalstorageLogin from "./components/LocalstorageLogin";
+
+
+const App = () => {
+  return (
+    <>
+        {/* <Localstorage/> */}
+        <LocalstorageLogin/>
+    </>
+  )
 }
 
 export default App;
