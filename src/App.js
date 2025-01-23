@@ -142,18 +142,128 @@
 
 // export default App
 
-import React from "react";
-import Localstorage from "./components/Localstorage";
-import LocalstorageLogin from "./components/LocalstorageLogin";
+// import React from "react";
+// import Localstorage from "./components/Localstorage";
+// import LocalstorageLogin from "./components/LocalstorageLogin";
+// import NameEditing from "./components/NameEditing";
+// import KeyConcepts from "./components/KeyConcepts";
+// import Axios from "./components/Axios";
+// import Fetch from "./components/Fetch";
+
+
+// const App = () => {
+//   return (
+//     <>
+//         {/* <Localstorage/> */}
+//         {/* <LocalstorageLogin/> */}
+//         <NameEditing/>
+//         {/* <KeyConcepts/> */}
+//         {/* <Fetch/> */}
+//         {/* <Axios/> */}
+
+//     </>
+//   )
+// }
+
+// export default App;
+
+// import React from 'react'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import Layout from './components/ReactRouterDom/Layout';
+// import Home from './components/ReactRouterDom/Home';
+// import Blogs from './components/ReactRouterDom/Blogs';
+// import Contact from './components/ReactRouterDom/Contact';
+// import NoPage from './components/ReactRouterDom/NoPage';
+
+// const App = () => {
+//   return (
+//     <>
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<Layout/>} >
+
+//             <Route index element={<Home/>} />
+//             <Route path="blogs" element={<Blogs/>} />
+//             <Route path="contact" element={<Contact/>} />
+//             <Route path="*" element={<NoPage/>} />  
+
+//           </Route>
+//         </Routes>
+//       </BrowserRouter>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import Register from './components/RouterForms/Register'
+// import Login from './components/RouterForms/Login'
+// import Layout from './components/RouterForms/Layout'
+// import NoPage from './components/RouterForms/NoPage'
+// import DashBoard from './components/RouterForms/DashBoard'
+// import AdminLogin from './components/RouterForms/AdminLogin'
+// import UserLogin from './components/RouterForms/UserLogin'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Orders from './components/RouterForms/Orders';
+// import NameEditing from './components/NameEditing';
+
+
+
+// const App = () => {
+//   return (
+//     <>
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<Layout/>} >
+//             {/* <Route index element={<Layout/>} /> */}
+//             <Route  index element={<Register/>} />
+//             <Route path="login" element={<Login/>} />
+//             {/* <Route path="dashboard" element={<DashBoard/>} /> */}
+//             <Route path="AdminLogin" element={<AdminLogin/> } />
+//             <Route path="UserLogin" element={<UserLogin/> } />
+//             <Route path="orders" element={<Orders />} />
+//             <Route path="todo" element={<NameEditing />} />
+//             <Route path="*" element={<NoPage/>} />
+//           </Route>
+//         </Routes>
+//       </BrowserRouter>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NoPage from './components/RouterForms/NoPage';
+import Layout from './components/quiz/Layout';
+import Register from './components/quiz/Register';
+import Login from './components/quiz/Login';
+import AdminLogin from './components/quiz/AdminLogin';
+import UserLogin from './components/quiz/UserLogin';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
   return (
     <>
-        {/* <Localstorage/> */}
-        <LocalstorageLogin/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Register />} />
+            <Route path="login" element={<Login />} />
+            <Route path="AdminLogin" element={<AdminLogin />} />
+            <Route path="UserLogin" element={<UserLogin />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
 
-export default App;
+export default App
